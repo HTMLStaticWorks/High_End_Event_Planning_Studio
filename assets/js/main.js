@@ -8,7 +8,28 @@ document.addEventListener('DOMContentLoaded', () => {
   initImageHandling();
   initAnimations();
   initThemeToggles();
+  initBackToTop();
 });
+
+function initBackToTop() {
+  const backToTopBtn = document.getElementById('backToTop');
+  if (!backToTopBtn) return;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.add('is-visible');
+    } else {
+      backToTopBtn.classList.remove('is-visible');
+    }
+  }, { passive: true });
+
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
 
 /**
  * Build a shared mobile navigation drawer from the existing desktop nav/actions.

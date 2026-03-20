@@ -83,32 +83,28 @@
             <div class="container container-sm fade-up">
                 <form id="contactForm" novalidate
                     style="background: var(--color-bg-alt); padding: var(--space-6); border: 1px solid var(--color-border);">
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4);">
-                        <div class="form-group">
-                            <label class="form-label" for="firstName">First Name *</label>
-                            <input type="text" id="firstName" class="form-control" required>
-                            <div class="error-msg">Please enter your first name.</div>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="lastName">Last Name *</label>
-                            <input type="text" id="lastName" class="form-control" required>
-                            <div class="error-msg">Please enter your last name.</div>
-                        </div>
+                    <div class="form-group">
+                        <label class="form-label" for="firstName">First Name *</label>
+                        <input type="text" id="firstName" class="form-control" required>
+                        <div class="error-msg">Please enter your first name.</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" class="form-control" required>
+                        <div class="error-msg">Please enter your last name.</div>
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="email">Email Address *</label>
                         <input type="email" id="email" class="form-control" required>
                         <div class="error-msg">Please enter a valid email address.</div>
                     </div>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4);">
-                        <div class="form-group">
-                            <label class="form-label" for="eventDate">Anticipated Date</label>
-                            <input type="date" id="eventDate" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="eventLocation">Venue / Location</label>
-                            <input type="text" id="eventLocation" class="form-control">
-                        </div>
+                    <div class="form-group">
+                        <label class="form-label" for="eventDate">Anticipated Date</label>
+                        <input type="date" id="eventDate" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="eventLocation">Venue / Location</label>
+                        <input type="text" id="eventLocation" class="form-control">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="guestCount">Estimated Guest Count</label>
@@ -158,20 +154,32 @@
             </div>
         </section>
 
-        <!-- 6. FAQ Intro -->
+        <!-- 6. FAQ Section -->
         <section class="faq-section">
             <div class="container fade-up text-center">
-                <h2>Frequently Asked Questions</h2>
-                <div style="max-width: 700px; margin: var(--space-4) auto 0; text-align: left;">
-                    <h4 style="font-size: 1.25rem;">Do you travel for events?</h4>
-                    <p class="mb-4">Absolutely. A significant portion of our commissions are destination weddings across
-                        Europe, the Caribbean, and beyond.</p>
-                    <h4 style="font-size: 1.25rem;">What is your minimum investment?</h4>
-                    <p class="mb-4">Our full-service planning commissions generally begin at $15,000, tailored to the
-                        specifics of your celebration.</p>
-                    <h4 style="font-size: 1.25rem;">Do you only plan weddings?</h4>
-                    <p>While weddings are our specialty, we also conceptualize and produce milestone anniversaries,
-                        grand galas, and multi-day brand experiences.</p>
+                <h2 class="mb-4">Frequently Asked Questions</h2>
+                <div class="faq-accordion" style="max-width: 800px; margin: 0 auto; text-align: left;">
+                    <details class="faq-item">
+                        <summary class="faq-question">Do you travel for events?</summary>
+                        <div class="faq-answer">
+                            <p>Absolutely. A significant portion of our commissions are destination weddings across
+                                Europe, the Caribbean, and beyond.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">What is your minimum investment?</summary>
+                        <div class="faq-answer">
+                            <p>Our full-service planning commissions generally begin at $15,000, tailored to the
+                                specifics of your celebration.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">Do you only plan weddings?</summary>
+                        <div class="faq-answer">
+                            <p>While weddings are our specialty, we also conceptualize and produce milestone anniversaries,
+                                grand galas, and multi-day brand experiences.</p>
+                        </div>
+                    </details>
                 </div>
             </div>
         </section>
@@ -312,6 +320,7 @@
             }
         });
     </script>
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">↑</button>
 </body>
 
 </html>

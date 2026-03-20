@@ -86,3 +86,14 @@
   background: var(--color-ivory);
 }
 
+/* Form Dropdown Visibility in Dark Mode */
+[data-theme="dark"] select.form-control {
+  background-color: var(--color-obsidian-light);
+  color: var(--color-ivory);
+}
+
+[data-theme="dark"] select.form-control option {
+  background-color: var(--color-obsidian-light);
+  color: var(--color-ivory);
+}
+
