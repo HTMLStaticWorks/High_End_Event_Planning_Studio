@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Lumière Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+</head>
+<body>
+
+    <header class="site-header fade-in">
+        <div class="container">
+            <div class="site-logo">Lumière</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home-2.html">Home 2</a></li>
+                    <li><a href="about.html" class="active-nav-link">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Journal</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="action-btn js-theme-toggle" aria-label="Toggle Dark Mode">☾</button>
+                <button class="action-btn js-rtl-toggle" aria-label="Toggle RTL">⇄</button>
+                <a href="login.html" class="action-btn btn--outline" style="font-size: 0.75rem; padding: 0.5rem 1rem;">Client Login</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero -->
+        <section class="page-hero page-hero--image text-center" style="padding: 0; margin-top: 80px; height: 60vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; background: transparent;">
+            <div class="hero-media" style="position: absolute; top:0; left:0; right:0; bottom:0; z-index: 0;">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" data-backup-src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="About hero image" style="width: 100%; height: 100%; object-fit: cover;">
+                <div style="position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.4);"></div>
+            </div>
+            <div class="container container-sm" style="position: relative; z-index: 1;">
+                <h1 style="font-size: 5vw; margin-bottom: var(--space-3); color: #fff;">The Studio</h1>
+                <p style="color: rgba(255,255,255,0.9); font-size: 1.25rem; font-weight: 300;">Purveyors of modern luxury and unforgettable aesthetic experiences.</p>
+            </div>
+        </section>
+
+        <!-- 2. Story Section -->
+        <section class="story-section">
+            <div class="container split-section">
+                <div class="split-image reveal-wrap fade-up">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Studio Meeting" class="reveal" style="height: 600px; object-fit: cover; width: 100%;">
+                </div>
+                <div class="split-content fade-up" style="transition-delay: 0.2s;">
+                    <span style="font-size:0.875rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--color-text-light);">Our Genesis</span>
+                    <h2 class="mb-4 mt-2">Born from a love of cinematic beauty</h2>
+                    <p class="mb-3">Lumière was founded on the belief that milestones deserve to be immortalized through exceptional design and flawless orchestration. What began as a boutique floral studio has organically evolved into a globally recognized event production firm.</p>
+                    <p>We are a team of meticulous planners, conceptual designers, and logistical experts united by one goal: bringing the extraordinary to life.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Full Width Quote -->
+        <section class="quote-section bg-alt" style="padding: var(--space-10) 0;">
+            <div class="container container-sm text-center fade-up">
+                <blockquote>"We don't follow trends; we observe the couple, the venue, and the season, letting authentic beauty reveal itself."</blockquote>
+            </div>
+        </section>
+
+        <!-- 4. Founder Section -->
+        <section class="founder-section">
+            <div class="container split-section split-reverse">
+                <div class="split-image reveal-wrap fade-up">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Founder" class="reveal" style="height: 600px; object-fit: cover; width: 100%;">
+                </div>
+                <div class="split-content fade-up" style="transition-delay: 0.2s;">
+                    <span style="font-size:0.875rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--color-text-light);">Creative Director</span>
+                    <h2 class="mb-4 mt-2">Eleanor Vance</h2>
+                    <p class="mb-3">With a background in architectural design and high-fashion editorial, Eleanor brings a structural yet wildly romantic sensibility to event styling. Her work is characterized by thoughtful restraint and a masterful use of space and light.</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Jon_Kirsch%27s_Signature.png" alt="Signature" style="height: 60px; filter: grayscale(1); opacity: 0.5; margin-top: var(--space-3);" class="fade-up">
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Values Grid -->
+        <section class="values-section bg-alt">
+            <div class="container fade-up">
+                <div class="text-center mb-6">
+                    <h2>Our Principles</h2>
+                </div>
+                <div class="principles-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6);">
+                    <div class="value-card fade-up">
+                        <h4 style="border-bottom: 1px solid var(--color-champagne); padding-bottom: var(--space-2); margin-bottom: var(--space-3);">01. Empathy</h4>
+                        <p>We listen deeply to translate your narrative into tangible environments.</p>
+                    </div>
+                    <div class="value-card fade-up" style="transition-delay: 0.1s;">
+                        <h4 style="border-bottom: 1px solid var(--color-champagne); padding-bottom: var(--space-2); margin-bottom: var(--space-3);">02. Discretion</h4>
+                        <p>Our clientele values privacy, and we operate with absolute confidentiality.</p>
+                    </div>
+                    <div class="value-card fade-up" style="transition-delay: 0.2s;">
+                        <h4 style="border-bottom: 1px solid var(--color-champagne); padding-bottom: var(--space-2); margin-bottom: var(--space-3);">03. Excellence</h4>
+                        <p>We partner only with master artisans and premier venues worldwide.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Image Break -->
+        <section class="image-break p-0 reveal-wrap">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Atmosphere" class="reveal" style="width: 100%; height: 60vh; object-fit: cover;">
+        </section>
+
+        <!-- 7. Global Reach -->
+        <section class="reach-section">
+            <div class="container fade-up text-center">
+                <h2>Worldwide Reach</h2>
+                <p class="mb-5" style="max-width: 600px; margin-left: auto; margin-right: auto;">Based in New York City and Paris, our team seamlessly produces events across continents, navigating complex logistics with grace.</p>
+                <div style="display: flex; justify-content: center; gap: var(--space-8); flex-wrap: wrap;">
+                    <div>
+                        <h4 style="color: var(--color-champagne-dark);">New York</h4>
+                        <p style="font-size: 0.875rem;">Global Headquarters</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--color-champagne-dark);">Paris</h4>
+                        <p style="font-size: 0.875rem;">European Office</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--color-champagne-dark);">Lake Como</h4>
+                        <p style="font-size: 0.875rem;">Summer Residency</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. CTA Section -->
+        <section class="cta-section text-center" style="background-color: var(--color-obsidian); padding: var(--space-12) 0; color: var(--color-white);">
+            <div class="container fade-up">
+                <h2 class="mb-3" style="color: var(--color-champagne);">Let's create together</h2>
+                <p class="mb-5" style="color: #aaa; max-width:600px; margin-left:auto; margin-right:auto;">Connect with our studio to begin planning your extraordinary event.</p>
+                <a href="contact.html" class="btn btn--primary" style="background: var(--color-white); color: var(--color-obsidian);">Contact Us</a>
+            </div>
+        </section>
+
+    </main>
+
+                <!-- Footer -->
+    <footer class="site-footer fade-in">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Left Column -->
+                <div class="footer-col brand-col">
+                    <h3 style="font-size:2rem; color:var(--color-white); margin-bottom:var(--space-2); font-family: var(--font-heading);">Lumière</h3>
+                    <p style="color: #888; margin-bottom: var(--space-3); line-height: 1.6;">A high-end styling and planning studio dedicated to creating deeply personal, aesthetically uncompromised events worldwide.</p>
+                    <div class="social-links" style="display: flex; gap: 1.5rem; margin-top: var(--space-2);">
+                        <a href="#" aria-label="Instagram" style="color: var(--color-white); opacity: 0.8; transition: all 0.3s; display: block;" onmouseover="this.style.color='var(--color-champagne)'; this.style.opacity='1'; this.style.transform='translateY(-2px)'" onmouseout="this.style.color='var(--color-white)'; this.style.opacity='0.8'; this.style.transform='translateY(0)'">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display: block;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" aria-label="Pinterest" style="color: var(--color-white); opacity: 0.8; transition: all 0.3s; display: block;" onmouseover="this.style.color='var(--color-champagne)'; this.style.opacity='1'; this.style.transform='translateY(-2px)'" onmouseout="this.style.color='var(--color-white)'; this.style.opacity='0.8'; this.style.transform='translateY(0)'">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display: block;"><line x1="12" y1="12" x2="12" y2="22"></line><line x1="12" y1="12" x2="16" y2="7"></line><line x1="12" y1="12" x2="8" y2="7"></line><path d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20z"></path></svg>
+                        </a>
+                        <a href="#" aria-label="Facebook" style="color: var(--color-white); opacity: 0.8; transition: all 0.3s; display: block;" onmouseover="this.style.color='var(--color-champagne)'; this.style.opacity='1'; this.style.transform='translateY(-2px)'" onmouseout="this.style.color='var(--color-white)'; this.style.opacity='0.8'; this.style.transform='translateY(0)'">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display: block;"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Middle Column -->
+                <div class="footer-col nav-col">
+                    <h4>Studio</h4>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Right Column -->
+                <div class="footer-col newsletter-col">
+                    <h4>Newsletter</h4>
+                    <p style="margin-bottom:var(--space-3); font-size:0.875rem; color:#888;">Join our list for studio news and inspiration.</p>
+                    <form class="newsletter-form" style="display:flex; align-items: center; border-bottom:1px solid rgba(255,255,255,0.3); padding-bottom: 0.5rem; transition: border-color 0.3s;" onmouseover="this.style.borderColor='rgba(255,255,255,0.7)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.3)'">
+                        <input type="email" placeholder="Email Address" style="background:transparent; border:none; color:#fff; outline:none; font-family:var(--font-body); width:100%; font-size: 1rem;">
+                        <button type="submit" style="background:transparent; border:none; color:var(--color-champagne); cursor:pointer; text-transform:uppercase; letter-spacing:0.1em; font-size:0.75rem; white-space:nowrap; padding-left: 1rem; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--color-champagne)'">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lumière Studio. All Rights Reserved. Designed with elegance.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
