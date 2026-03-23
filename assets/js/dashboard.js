@@ -1,5 +1,5 @@
 /**
- * Lumière - Dashboard Logic
+ * Solenza - Dashboard Logic
  * Handles sidebar tab switching logic and interactive dashboard UI.
  */
 

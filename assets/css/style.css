@@ -1,4 +1,4 @@
-/* Lumière - High-End Event Planning & Styling Studio
+/* Solenza - Luxury Occasion Architects & Stylists
    Design System & Base Styles
 */
 
@@ -707,9 +707,10 @@ body.mobile-nav-open .mobile-nav-inner {
 
 /* Footer */
 .site-footer {
-  background-color: var(--color-obsidian);
+  background-color: #050505;
   color: var(--color-white);
   padding: var(--space-10) 0 var(--space-4);
+  border-top: 1px solid rgba(224, 207, 168, 0.15);
 }
 
 .footer-grid {

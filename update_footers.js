@@ -17,8 +17,8 @@ const footer_html = `    <!-- Footer -->
             <div class="footer-grid">
                 <!-- Left Column -->
                 <div class="footer-col brand-col">
-                    <h3 style="font-size:2rem; color:var(--color-white); margin-bottom:var(--space-2); font-family: var(--font-heading);">Lumière</h3>
-                    <p style="color: #888; margin-bottom: var(--space-3); line-height: 1.6;">A high-end styling and planning studio dedicated to creating deeply personal, aesthetically uncompromised events worldwide.</p>
+                    <h3 style="font-size:2rem; color:var(--color-white); margin-bottom:var(--space-2); font-family: var(--font-heading);">Solenza</h3>
+                    <p style="color: #888; margin-bottom: var(--space-3); line-height: 1.6;">A luxury event curation and planning studio dedicated to creating deeply personal, aesthetically uncompromised events worldwide.</p>
                     <div class="social-links" style="display: flex; gap: 1.5rem; margin-top: var(--space-2);">
                         <a href="#" aria-label="Instagram" style="color: var(--color-white); opacity: 0.8; transition: all 0.3s; display: block;" onmouseover="this.style.color='var(--color-champagne)'; this.style.opacity='1'; this.style.transform='translateY(-2px)'" onmouseout="this.style.color='var(--color-white)'; this.style.opacity='0.8'; this.style.transform='translateY(0)'">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display: block;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
@@ -55,12 +55,12 @@ const footer_html = `    <!-- Footer -->
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Lumière Studio. All Rights Reserved. Designed with elegance.</p>
+                <p>&copy; 2026 Solenza Studio. All Rights Reserved. Designed with elegance.</p>
             </div>
         </div>
     </footer>`;
 
-const pages_dir = "c:\\slot 4\\High-End Event Planning & Styling Studio\\lumiere-studio\\pages";
+const pages_dir = "c:\\slot 4\\High-End Event Planning Styling Studio\\pages";
 const all_files = [
     "index.html", "home-2.html", "about.html", "services.html",
     "portfolio.html", "blog.html", "contact.html", "login.html", "register.html", "dashboard.html"

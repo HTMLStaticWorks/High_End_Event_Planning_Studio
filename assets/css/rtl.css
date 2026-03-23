@@ -1,4 +1,4 @@
-/* Lumière - RTL Support */
+/* Solenza - RTL Support */
 [dir="rtl"] {
   text-align: right;
   direction: rtl;
@@ -16,9 +16,9 @@
   padding-right: 0;
 }
 
-[dir="rtl"] .split-section > * {
-  /* Assumes flex-direction is row */
-}
+/* [dir="rtl"] .split-section > * {
+   Assumes flex-direction is row
+} */
 
 /* Icons */
 [dir="rtl"] .icon-arrow, 

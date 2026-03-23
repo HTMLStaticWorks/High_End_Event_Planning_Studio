@@ -18,8 +18,8 @@ footer_html = """    <!-- Footer -->
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col" style="grid-column: span 2;">
-                    <h3 style="font-size:2rem; color:var(--color-white); margin-bottom:var(--space-2); font-family: var(--font-heading);">Lumière</h3>
-                    <p style="max-width:300px; color: #888;">A high-end styling and planning studio dedicated to creating deeply personal, aesthetically uncompromised events worldwide.</p>
+                    <h3 style="font-size:2rem; color:var(--color-white); margin-bottom:var(--space-2); font-family: var(--font-heading);">Solenza</h3>
+                    <p style="max-width:300px; color: #888;">A luxury event curation and planning studio dedicated to creating deeply personal, aesthetically uncompromised events worldwide.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Studio</h4>
@@ -55,12 +55,12 @@ footer_html = """    <!-- Footer -->
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Lumière Studio. All Rights Reserved. Designed with elegance.</p>
+                <p>&copy; 2026 Solenza Studio. All Rights Reserved. Designed with elegance.</p>
             </div>
         </div>
     </footer>"""
 
-pages_dir = r"c:\slot 4\High-End Event Planning & Styling Studio\lumiere-studio\pages"
+pages_dir = r"c:\slot 4\High-End Event Planning Styling Studio\pages"
 all_files = [
     "index.html", "home-2.html", "about.html", "services.html",
     "portfolio.html", "blog.html", "contact.html", "login.html", "register.html", "dashboard.html"

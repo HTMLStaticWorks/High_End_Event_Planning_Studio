@@ -1,5 +1,5 @@
 /**
- * Lumière - Main JavaScript
+ * Solenza - Main JavaScript
  * Handles premium intersection scroll animations, dark mode and RTL toggles.
  */
 
@@ -225,8 +225,8 @@ function initThemeToggles() {
   const rtlToggles = document.querySelectorAll('.js-rtl-toggle');
 
   // Check Local Storage
-  const savedTheme = localStorage.getItem('lumiere_theme');
-  const savedDir = localStorage.getItem('lumiere_dir');
+  const savedTheme = localStorage.getItem('solenza_theme');
+  const savedDir = localStorage.getItem('solenza_dir');
 
   if (savedTheme === 'dark') {
     document.documentElement.setAttribute('data-theme', 'dark');
@@ -243,10 +243,10 @@ function initThemeToggles() {
       const currentTheme = document.documentElement.getAttribute('data-theme');
       if (currentTheme === 'dark') {
         document.documentElement.removeAttribute('data-theme');
-        localStorage.setItem('lumiere_theme', 'light');
+        localStorage.setItem('solenza_theme', 'light');
       } else {
         document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('lumiere_theme', 'dark');
+        localStorage.setItem('solenza_theme', 'dark');
       }
     });
   });
@@ -258,10 +258,10 @@ function initThemeToggles() {
       const currentDir = document.documentElement.getAttribute('dir');
       if (currentDir === 'rtl') {
         document.documentElement.removeAttribute('dir');
-        localStorage.setItem('lumiere_dir', 'ltr');
+        localStorage.setItem('solenza_dir', 'ltr');
       } else {
         document.documentElement.setAttribute('dir', 'rtl');
-        localStorage.setItem('lumiere_dir', 'rtl');
+        localStorage.setItem('solenza_dir', 'rtl');
       }
     });
   });
