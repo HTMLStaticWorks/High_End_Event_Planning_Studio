@@ -341,6 +341,7 @@ section + section {
   font-size: 0.875rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .form-control {
