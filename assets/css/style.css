@@ -360,6 +360,33 @@ section + section {
   border-color: var(--color-obsidian);
 }
 
+.btn-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  font-size: 0.815rem;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  width: 100%;
+  font-family: var(--font-body);
+  border-radius: 4px;
+}
+
+.btn-social:hover {
+  background: rgba(17, 17, 17, 0.05);
+}
+
+.btn-social svg, 
+.btn-social img {
+  width: 18px;
+  height: 18px;
+}
+
 /* Header/Nav */
 .site-header {
   position: fixed;
@@ -710,10 +737,10 @@ body.mobile-nav-open .mobile-nav-inner {
 
 /* Footer */
 .site-footer {
-  background-color: #050505;
+  background-color: #0b0b0b; /* Slightly lighter than #050505 for better contrast with #111111 sections */
   color: var(--color-white);
   padding: var(--space-10) 0 var(--space-4);
-  border-top: 1px solid rgba(224, 207, 168, 0.15);
+  border-top: 2px solid rgba(224, 207, 168, 0.3); /* More prominent champagne border */
 }
 
 .footer-grid {

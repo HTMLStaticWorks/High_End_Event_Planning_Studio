@@ -102,3 +102,17 @@
   border-top: 1px solid rgba(224, 207, 168, 0.2);
 }
 
+/* Social Buttons Dark Mode */
+[data-theme="dark"] .btn-social {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--color-ivory);
+}
+
+[data-theme="dark"] .btn-social:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .btn-social svg {
+  fill: var(--color-ivory);
+}
+
