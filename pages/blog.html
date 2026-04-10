@@ -152,21 +152,26 @@
         </section>
 
         <!-- 5. Editorial Quote Break -->
-        <section class="quote-image reveal-wrap p-0"
-            style="position: relative; height: 50vh; display: flex; align-items: center; justify-content: center;">
+        <section class="quote-image reveal-wrap p-0 js-quote-accent"
+            style="position: relative; height: auto; max-height: 420px; min-height: 280px; padding: 4rem 0; display: flex; align-items: center; justify-content: center; overflow: hidden;">
             <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
                 alt="Atmosphere" class="reveal"
                 style="position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
             <div
                 style="position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.5); z-index: -1;">
             </div>
-            <div class="container text-center fade-up" style="color: #fff;">
+            <div class="container text-center fade-up" style="color: #fff; position: relative; z-index: 1;">
                 <h2
-                    style="color: var(--color-champagne); font-family: var(--font-quote); font-style: italic; max-width: 800px; margin: 0 auto;">
-                    “To craft a celebration is to translate a private language of love into a public declaration of
-                    art.”</h2>
+                    style="color: var(--color-champagne); font-family: var(--font-quote); font-style: italic; max-width: 800px; margin: 0 auto; font-size: clamp(1.25rem, 2.5vw, 2rem);">
+                    "To craft a celebration is to translate a private language of love into a public declaration of
+                    art."</h2>
             </div>
         </section>
+        <style>
+          @media (max-width: 768px) {
+            .js-quote-accent { max-height: 260px !important; min-height: 200px !important; padding: 2.5rem 0 !important; }
+          }
+        </style>
 
         <!-- 6. Older Articles -->
         <section class="older-articles">

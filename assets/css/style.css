@@ -8,8 +8,8 @@
   --color-obsidian-light: #222222;
   --color-ivory: #FAF9F6;
   --color-ivory-dark: #E4E3DF;
-  --color-champagne: #E0CFA8;
-  --color-champagne-dark: #C4B38C;
+  --color-champagne: #C9922C;
+  --color-champagne-dark: #A87620;
   --color-blush: #E8D8D3;
   --color-white: #FFFFFF;
   --color-text: var(--color-obsidian);
@@ -79,9 +79,10 @@ h5 { font-size: 1.5rem; }
 
 p {
   margin-bottom: var(--space-3);
-  font-size: 1.125rem;
+  font-size: 1.0625rem;
   font-weight: 300;
   color: var(--color-text-light);
+  line-height: 1.75;
 }
 
 blockquote {
@@ -148,7 +149,7 @@ section + section {
 .split-section {
   display: flex;
   align-items: center;
-  gap: var(--space-8);
+  gap: 3rem;
 }
 
 .split-section > * {
@@ -1062,6 +1063,41 @@ body.mobile-nav-open .mobile-nav-inner {
   height: 1px;
   background-color: var(--color-champagne);
   transform: scaleX(1);
+}
+
+/* Image–Text Spacing: blog cards, archive cards */
+.journal-card img,
+.archive-card img {
+  margin-bottom: 2rem;
+}
+
+/* CTA Section — Inquire Now button hover fix (#7)
+   On champagne-bg CTA sections, btn--outline hovers to obsidian with ivory text for WCAG AA contrast. */
+.cta-section .btn--outline {
+  border-color: var(--color-obsidian);
+  color: var(--color-obsidian);
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.cta-section .btn--outline:hover {
+  background-color: var(--color-obsidian);
+  color: #FAF9F6;
+  border-color: var(--color-obsidian);
+}
+
+/* Dark-bg CTA sections (if champagne-bg is not used) — gold fill hover */
+.cta-section--dark .btn--outline {
+  border-color: var(--color-champagne);
+  color: #FAF9F6;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.cta-section--dark .btn--outline:hover {
+  background-color: var(--color-champagne);
+  color: #1a1a1a;
+  border-color: var(--color-champagne);
 }
 
 /* FAQ Accordion Styling */
