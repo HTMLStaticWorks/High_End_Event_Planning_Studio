@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Solenza Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+    <style>
+        .error-msg {
+            color: #d9534f;
+            font-size: 0.875rem;
+            display: none;
+            margin-top: 5px;
+        }
+
+        .is-invalid {
+            border-color: #d9534f !important;
+        }
+    </style>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+</head>
+
+<body>
+
+    <header class="site-header fade-in">
+        <div class="container">
+            <div class="site-logo">Solenza</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="home-2.html">Home 2</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Journal</a></li>
+                    <li><a href="contact.html" class="active-nav-link">Contact</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="action-btn js-theme-toggle" aria-label="Toggle Dark Mode">☾</button>
+                <button class="action-btn js-rtl-toggle" aria-label="Toggle RTL">⇄</button>
+                <a href="login.html" class="action-btn btn--outline"
+                    style="font-size: 0.75rem; padding: 0.5rem 1rem;">Client Login</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero -->
+        <section class="page-hero page-hero--image text-center"
+            style="padding: 0; margin-top: 80px; height: 60vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; background: transparent;">
+            <div class="hero-media" style="position: absolute; top:0; left:0; right:0; bottom:0; z-index: 0;">
+                <img src="https://images.unsplash.com/photo-1542456073-1014e7dc2703?ixlib=rb-4.0.3&auto=format&fit=crop&w=1800&q=80"
+                    data-backup-src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1800&q=80"
+                    alt="Contact hero image" style="width: 100%; height: 100%; object-fit: cover;">
+                <div style="position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.4);"></div>
+            </div>
+            <div class="container container-sm" style="position: relative; z-index: 1;">
+                <h1 style="font-size: 5vw; margin-bottom: var(--space-3); color: #fff;">Inquire</h1>
+            </div>
+        </section>
+
+        <!-- 2. Contact Info & Intro -->
+        <section class="contact-intro bg-alt" style="padding: 1rem 0;">
+            <div class="container text-center fade-up">
+                <p style="max-width: 700px; margin: 0 auto; font-size: 1.25rem;">We accept a limited number of
+                    commissions annually to preserve our standard of excellence. Please share the details of your
+                    celebration below, and our studio director will be in touch shortly.</p>
+            </div>
+        </section>
+
+        <!-- 3. Contact Form w/ Validation -->
+        <section class="contact-form-section">
+            <div class="container container-sm fade-up">
+                <form id="contactForm" novalidate
+                    style="background: var(--color-bg-alt); padding: var(--space-6); border: 1px solid var(--color-border);">
+                    <div class="form-group">
+                        <label class="form-label" for="firstName">First Name *</label>
+                        <input type="text" id="firstName" class="form-control" required>
+                        <div class="error-msg">Please enter your first name.</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" class="form-control" required>
+                        <div class="error-msg">Please enter your last name.</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email Address *</label>
+                        <input type="email" id="email" class="form-control" required>
+                        <div class="error-msg">Please enter a valid email address.</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="eventDate">Anticipated Date</label>
+                        <input type="date" id="eventDate" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="eventLocation">Venue / Location</label>
+                        <input type="text" id="eventLocation" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="guestCount">Estimated Guest Count</label>
+                        <select id="guestCount" class="form-control">
+                            <option value="">Select an option</option>
+                            <option value="under50">Under 50</option>
+                            <option value="50to150">50 - 150</option>
+                            <option value="150to300">150 - 300</option>
+                            <option value="300plus">300+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="message">Tell us about your event *</label>
+                        <textarea id="message" rows="5" class="form-control" required></textarea>
+                        <div class="error-msg">Please share some details about your event.</div>
+                    </div>
+                    <button type="submit" class="btn btn--primary" style="width: 100%;">Submit Inquiry</button>
+                    <div id="successMsg"
+                        style="display:none; color: green; margin-top: var(--space-2); text-align: center;">Your inquiry
+                        has been received. We will be in touch soon.</div>
+                </form>
+            </div>
+        </section>
+
+        <!-- 4. Image Break -->
+        <section class="image-break p-0 reveal-wrap">
+            <img src="https://images.squarespace-cdn.com/content/v1/5b3041fb8f51307d48508151/ee5abeba-d41e-4b89-911a-5c87927a68b0/Wedding+Seating+Arrangement+Tips+for+Creating+an+Intimate+Atmosphere+5.jpg"
+                alt="Atmosphere" class="reveal" style="width: 100%; height: 50vh; object-fit: cover;">
+        </section>
+
+        <!-- 5. Locations -->
+        <section class="locations bg-alt text-center" style="padding: 1.5rem 0;">
+            <div class="container fade-up">
+                <h3 class="mb-5">Our Offices</h3>
+                <div
+                    style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); max-width: 800px; margin: 0 auto;">
+                    <div>
+                        <h4 style="font-family: var(--font-quote); font-style: italic;">New York</h4>
+                        <p style="margin-bottom: 0;">100 Fifth Avenue, Floor 4<br>New York, NY 10011<br>+1 (212)
+                            555-0198</p>
+                    </div>
+                    <div>
+                        <h4 style="font-family: var(--font-quote); font-style: italic;">Paris</h4>
+                        <p style="margin-bottom: 0;">15 Rue de la Paix<br>75002 Paris, France<br>+33 1 42 68 53 00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. FAQ Section -->
+        <section class="faq-section">
+            <div class="container fade-up text-center">
+                <h2 class="mb-4">Frequently Asked Questions</h2>
+                <div class="faq-accordion" style="max-width: 800px; margin: 0 auto; text-align: left;">
+                    <details class="faq-item">
+                        <summary class="faq-question">Do you travel for events?</summary>
+                        <div class="faq-answer">
+                            <p>Absolutely. A significant portion of our commissions are destination weddings across
+                                Europe, the Caribbean, and beyond.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">What is your minimum investment?</summary>
+                        <div class="faq-answer">
+                            <p>Our full-service planning commissions generally begin at $15,000, tailored to the
+                                specifics of your celebration.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">Do you only plan weddings?</summary>
+                        <div class="faq-answer">
+                            <p>While weddings are our specialty, we also conceptualize and produce milestone anniversaries,
+                                grand galas, and multi-day brand experiences.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Press & Media -->
+        <section class="press-inquiries" style="padding: 1.5rem 0; background-color: var(--color-champagne); color: var(--color-obsidian);">
+            <div class="container text-center fade-up">
+                <h3 style="font-family: var(--font-quote); font-style: italic; font-size: 2rem; color: var(--color-obsidian);" class="mb-2">Media &
+                    Press</h3>
+                <p style="color: var(--color-obsidian-light);">For editorial features, interview requests, and speaking engagements:</p>
+                <a href="mailto:press@solenzastudio.com"
+                    style="text-decoration: underline; text-underline-offset: 4px; color: var(--color-obsidian);">press@solenzastudio.com</a>
+            </div>
+        </section>
+
+        <!-- 8. Footer -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer fade-in">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Left Column -->
+                <div class="footer-col brand-col">
+                    <h3
+                        style="font-size:2rem; color:var(--color-white); margin-bottom:var(--space-2); font-family: var(--font-heading);">
+                        Solenza</h3>
+                    <p style="color: #888; margin-bottom: var(--space-3); line-height: 1.6;">A luxury event curation and
+                        planning studio dedicated to creating deeply personal, aesthetically uncompromised events
+                        worldwide.</p>
+                    <div class="social-links" style="display: flex; gap: 1.5rem; margin-top: var(--space-2);">
+                        <a href="#" aria-label="Instagram"
+                            style="color: var(--color-white); opacity: 0.8; transition: all 0.3s; display: block;"
+                            onmouseover="this.style.color='var(--color-champagne)'; this.style.opacity='1'; this.style.transform='translateY(-2px)'"
+                            onmouseout="this.style.color='var(--color-white)'; this.style.opacity='0.8'; this.style.transform='translateY(0)'">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                style="display: block;">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Pinterest"
+                            style="color: var(--color-white); opacity: 0.8; transition: all 0.3s; display: block;"
+                            onmouseover="this.style.color='var(--color-champagne)'; this.style.opacity='1'; this.style.transform='translateY(-2px)'"
+                            onmouseout="this.style.color='var(--color-white)'; this.style.opacity='0.8'; this.style.transform='translateY(0)'">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                style="display: block;">
+                                <line x1="12" y1="12" x2="12" y2="22"></line>
+                                <line x1="12" y1="12" x2="16" y2="7"></line>
+                                <line x1="12" y1="12" x2="8" y2="7"></line>
+                                <path d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook"
+                            style="color: var(--color-white); opacity: 0.8; transition: all 0.3s; display: block;"
+                            onmouseover="this.style.color='var(--color-champagne)'; this.style.opacity='1'; this.style.transform='translateY(-2px)'"
+                            onmouseout="this.style.color='var(--color-white)'; this.style.opacity='0.8'; this.style.transform='translateY(0)'">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                style="display: block;">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Middle Column -->
+                <div class="footer-col nav-col">
+                    <h4>Studio</h4>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Right Column -->
+                <div class="footer-col newsletter-col">
+                    <h4>Newsletter</h4>
+                    <p style="margin-bottom:var(--space-3); font-size:0.875rem; color:#888;">Join our list for studio
+                        news and inspiration.</p>
+                    <form class="newsletter-form"
+                        style="display:flex; align-items: center; border-bottom:1px solid rgba(255,255,255,0.3); padding-bottom: 0.5rem; transition: border-color 0.3s;"
+                        onmouseover="this.style.borderColor='rgba(255,255,255,0.7)'"
+                        onmouseout="this.style.borderColor='rgba(255,255,255,0.3)'">
+                        <input type="email" placeholder="Email Address"
+                            style="background:transparent; border:none; color:#fff; outline:none; font-family:var(--font-body); width:100%; font-size: 1rem;">
+                        <button type="submit"
+                            style="background:transparent; border:none; color:var(--color-champagne); cursor:pointer; text-transform:uppercase; letter-spacing:0.1em; font-size:0.75rem; white-space:nowrap; padding-left: 1rem; transition: color 0.3s;"
+                            onmouseover="this.style.color='#fff'"
+                            onmouseout="this.style.color='var(--color-champagne)'">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Solenza Studio. All Rights Reserved. Designed with elegance.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        // Form Validation Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('contactForm');
+            if (form) {
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    let isValid = true;
+                    const requiredFields = form.querySelectorAll('[required]');
+
+                    requiredFields.forEach(field => {
+                        const errorMsg = field.nextElementSibling;
+                        if (!field.value.trim()) {
+                            isValid = false;
+                            field.classList.add('is-invalid');
+                            if (errorMsg && errorMsg.classList.contains('error-msg')) errorMsg.style.display = 'block';
+                        } else if (field.type === 'email' && !/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(field.value)) {
+                            isValid = false;
+                            field.classList.add('is-invalid');
+                            if (errorMsg && errorMsg.classList.contains('error-msg')) errorMsg.style.display = 'block';
+                        } else {
+                            field.classList.remove('is-invalid');
+                            if (errorMsg && errorMsg.classList.contains('error-msg')) errorMsg.style.display = 'none';
+                        }
+                    });
+
+                    if (isValid) {
+                        form.querySelector('#successMsg').style.display = 'block';
+                        setTimeout(() => { form.reset(); form.querySelector('#successMsg').style.display = 'none'; }, 3000);
+                    }
+                });
+            }
+        });
+    </script>
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">↑</button>
+</body>
+
+</html>
